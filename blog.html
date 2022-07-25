@@ -7,6 +7,16 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="blogcss.css">
     <script src="https://kit.fontawesome.com/8fe7d76e9f.js" crossorigin="anonymous"></script>
+    script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+
+        
+    
+    </script>
 </head>
 <body>
     <header class="header">
